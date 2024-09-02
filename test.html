@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Hidden Div Example</title>
+    <style>
+        /* Hide the div by default */
+        #hiddenDiv {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showDiv()">Click to Show Div</button>
+
+    <div id="hiddenDiv">
+        <p>This is a hidden div that appears when you click the button!</p>
+    </div>
+    <script>
+        function showDiv() {
+            // Get the hidden div by its ID
+            const hiddenDiv = document.getElementById("hiddenDiv");
+    
+            // Set the display style to block to make it visible
+            hiddenDiv.style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>
